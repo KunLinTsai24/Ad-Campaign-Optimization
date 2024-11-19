@@ -14,8 +14,12 @@ There are three campaigns in this project:
 
 This data-driven approach aims to enhance the efficiency of ad spend and drive higher ROI for future marketing campaigns.
 
-The original dataset for this analysis is available here \[link\].  
-The Python code used to inspect and clean the data for this analysis can be found here \[link\].
+
+
+<br/>
+
+The original dataset for this analysis is available here \[[link](https://github.com/KunLinTsai24/Ad-Campaign-Optimization/blob/main/data/ad_campaign.csv)\].  
+The Python code used to inspect and clean the data for this analysis can be found here \[[link](https://github.com/KunLinTsai24/Ad-Campaign-Optimization/blob/main/script/Campaign%20Optimization.ipynb)\].
 
 # Data Structure & Initial Checks
 
@@ -58,7 +62,7 @@ The analysis revealed that the **Tech Enthusiasts** campaign performed exception
 *   **High Engagement Challenges**: CTR (0.000176) is the lowest among all campaigns, indicating that the ads are not resonating well with the audience, leading to poor click engagement.
 *   **Cost Inefficiency**: CPC (1.54) is the highest, suggesting that the campaign is spending more to generate clicks compared to the others, which could be driving up costs without corresponding returns.
 
-![]()
+![](https://github.com/KunLinTsai24/Ad-Campaign-Optimization/blob/main/img/Campaign.png)
 
 ### Target Audience Segmentation:
 
@@ -66,7 +70,7 @@ The analysis revealed that the **Tech Enthusiasts** campaign performed exception
 *   **CR Declines with Age**: The Fitness Goals campaign shows a clear CR drop with age for both genders (e.g., males: 0.000178 → 0.000063), highlighting younger audiences (30-34, 35-39) as significantly more responsive and higher ROI potential.
 *   **Competitive Performance**: 30-34-year-old females show strong CR in the Fitness Goals campaign (CR = 0.000110), presenting an opportunity for targeted campaigns with tailored messaging and creative strategies to further enhance engagement and conversions.
 
-![]()
+![](https://github.com/KunLinTsai24/Ad-Campaign-Optimization/blob/main/img/Segmentation.png)
 
 # Recommendations:
 
