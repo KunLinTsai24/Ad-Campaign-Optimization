@@ -1,119 +1,90 @@
 # Project Background
-Backround about the company, including the industry, active years, business model, and key business metrics. Explain this from the POV of a data analyst who is working at the company.
+GlobalStyle E-commerce, a global e-commerce company founded in 2010, specializes in selling electronics, wellness products, accessories, and home decor items. In collaboration with the marketing team, I conducted an in-depth analysis to extract actionable insights and deliver strategic recommendations aimed at improving ad campaign performance, optimizing marketing budgets, and identifying lookalike audiences for targeted growth.
 
-Insights and recommendations are provided on the following key areas:
+The project focused on two key objectives:
 
-- **Category 1:** 
-- **Category 2:** 
-- **Category 3:** 
-- **Category 4:** 
+*   **Identifying the Best-Performing Campaign:** Key metrics—Conversion Rate (CR), Click-Through Rate (CTR), and Cost Per Click (CPC)—were analyzed to determine the most effective audience combinations. A/B testing validated that performance differences were statistically significant and actionable.
+*   **Refined User Segmentation**: The findings provided a deeper understanding of audience preferences, enabling the company to further segment user groups and deliver highly targeted and personalized advertising.
 
-The SQL queries used to inspect and clean the data for this analysis can be found here [link].
+There are three campaigns in this project:
 
-Targed SQL queries regarding various business questions can be found here [link].
+*   **916 (Tech Enthusiasts):** Target individuals with a strong interest in technology, gadgets, and innovative tools. This campaign focuses on promoting tech-related products such as smart devices, accessories, and electronics.
+*   **936 (Fitness Goals):** Appeal to individuals interested in fitness, health, and wellness products. This campaign promotes items like gym equipment, activewear, and nutritional supplements.
+*   **1178 (Home Renovators):** Attract DIY enthusiasts, homeowners, and individuals looking to improve their living spaces. The campaign focuses on promoting home renovation products such as tools, furniture, and decor items.
 
-An interactive Tableau dashboard used to report and explore sales trends can be found here [link].
+This data-driven approach aims to enhance the efficiency of ad spend and drive higher ROI for future marketing campaigns.
 
-
+The original dataset for this analysis is available here \[link\].  
+The Python code used to inspect and clean the data for this analysis can be found here \[link\].
 
 # Data Structure & Initial Checks
 
-The companies main database structure as seen below consists of four tables: table1, table2, table3, table4, with a total row count of X records. A description of each table is as follows:
-- **Table 2:**
-- **Table 3:**
-- **Table 4:**
-- **Table 5:**
+The company’s main database structure is shown below, with a total row count of 1,143 records. A description of the table is as follows:
 
-[Entity Relationship Diagram here]
-
-
+*   **ad\_id**: A unique ID for each ad.
+*   **company\_campaign\_id**: An ID associated with each ad campaign of the company.
+*   **fb\_campaign\_id**: An ID associated with how Facebook tracks each campaign.
+*   **age**: Age of the person to whom the ad is shown.
+*   **gender**: Gender of the person to whom the ad is shown.
+*   **interest**: A code specifying the category to which the person’s interest belongs.
+*   **impressions**: The number of times the ad was shown.
+*   **clicks**: Number of clicks for that ad.
+*   **spent**: Amount paid by the company to Facebook to show that ad.
+*   **total\_conversion**: Total number of people who enquired about the product after seeing the ad.
+*   **approved\_conversion**: Total number of people who bought the product after seeing the ad.
 
 # Executive Summary
 
 ### Overview of Findings
 
-Explain the overarching findings, trends, and themes in 2-3 sentences here. This section should address the question: "If a stakeholder were to take away 3 main insights from your project, what are the most important things they should know?" You can put yourself in the shoes of a specific stakeholder - for example, a marketing manager or finance director - to think creatively about this section.
-
-[Visualization, including a graph of overall trends or snapshot of a dashboard]
-
-
+The analysis revealed that the **Tech Enthusiasts** campaign performed exceptionally well, achieving the highest Conversion Rate (CR) and Click-Through Rate (CTR) while maintaining the lowest Cost Per Click (CPC), making it the most efficient campaign overall. The **Fitness Goals** campaign demonstrated strong engagement with a high CTR and moderate CR, offering a balanced performance that could be further optimized. In contrast, the **Home Renovators** campaign underperformed, with the lowest CR and CTR and the highest CPC, indicating significant room for improvement in targeting and cost efficiency. Additionally, the findings highlight that **30-34-year-old males** in both the **Tech Enthusiasts** and **Fitness Goals** campaigns had the best CR, emphasizing this demographic as a critical high-value audience segment.
 
 # Insights Deep Dive
-### Category 1:
+### Campaign: Tech Enthusiasts:
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+*   **High Conversion Efficiency**: CR (0.000120) is the highest among the three campaigns, showing that the Tech Enthusiasts campaign converts impressions to conversions more effectively than the others.
+*   **Low Scale**: With only 482,925 impressions and 54 ads, this campaign operates at a significantly smaller scale compared to the others, which limits its overall impact despite high efficiency.
+*   **Cost Efficiency**: The CPC (1.13) is the lowest among the campaigns, making it the most cost-efficient in generating clicks.
 
-[Visualization specific to category 1]
+### Campaign: Fitness Goals:
 
+*   **Balanced Performance**: CR (0.000066) is moderate compared to the Tech Enthusiasts campaign but better than the Home Renovators campaign. This indicates that while the campaign is not as efficient as the Tech Enthusiasts campaign, it still performs relatively well in converting impressions.
+*   **Significant Scale**: With 8,128,187 impressions and 464 ads, this campaign reaches a much broader audience, providing an opportunity for high absolute conversion numbers.
+*   **Moderate Cost Efficiency**: The CPC (1.36) is higher than the Tech Enthusiasts campaign but still lower than the Home Renovators campaign, making it relatively cost-efficient given its scale.
 
-### Category 2:
+### Campaign: Home Renovators:
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+*   **Large Scale but Low Efficiency**: With over 20 million impressions and 625 ads, this campaign has the largest scale but the lowest CR (0.000013), indicating inefficiency in converting impressions into meaningful actions.
+*   **High Engagement Challenges**: CTR (0.000176) is the lowest among all campaigns, indicating that the ads are not resonating well with the audience, leading to poor click engagement.
+*   **Cost Inefficiency**: CPC (1.54) is the highest, suggesting that the campaign is spending more to generate clicks compared to the others, which could be driving up costs without corresponding returns.
 
-[Visualization specific to category 2]
+![]()
 
+### Target Audience Segmentation:
 
-### Category 3:
+*   **30-34-Year-Old Males**: 30-34-year-old males are the top-performing segment across the Tech Enthusiasts campaign (CR = 0.000189) and the Fitness Goals campaign (CR = 0.000178), making them a critical high-value audience to target with tailored content and increased ad spend.
+*   **CR Declines with Age**: The Fitness Goals campaign shows a clear CR drop with age for both genders (e.g., males: 0.000178 → 0.000063), highlighting younger audiences (30-34, 35-39) as significantly more responsive and higher ROI potential.
+*   **Competitive Performance**: 30-34-year-old females show strong CR in the Fitness Goals campaign (CR = 0.000110), presenting an opportunity for targeted campaigns with tailored messaging and creative strategies to further enhance engagement and conversions.
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 3]
-
-
-### Category 4:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 4]
-
-
+![]()
 
 # Recommendations:
 
-Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
+### Campaign Optimization
 
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+*   **Redesign Ad Creatives for the Home Renovators Campaign**: Include compelling visuals, stronger CTAs, and clear value propositions that align with audience needs (e.g., benefits of the product/service).
+*   **Simplify Landing Pages for the Fitness Goals Campaign**: Ensure mobile optimization and include persuasive elements like testimonials or urgency triggers (e.g., limited-time offers).
+*   **Reallocate Budget Across Campaigns**: Increase budget allocation to the Tech Enthusiasts campaign and reduce spend on the Home Renovators campaign. Focus the remaining budget on testing new targeting and creative strategies.
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-
+### Target Audience Optimization
+*   **Expand 30-34-Year-Old Male Audience**: Use lookalike audience features on platforms like Facebook Ads or Google Ads to target similar users.
+*   **Target 30-34-Year-Old Females**: Design gender-specific campaigns with tailored messaging and creatives to align with this demographic’s preferences and behaviors.
+*   **Reduce Targeting of 40+ Age Groups**: Shift focus away from low-performing segments (40+) to prioritize younger demographics (30-39) with higher conversion potential.
 
 # Assumptions and Caveats:
 
 Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
 
-* Assumption 1 (ex: missing country records were for customers based in the US, and were re-coded to be US citizens)
-  
-* Assumption 1 (ex: data for December 2021 was missing - this was imputed using a combination of historical trends and December 2020 data)
-  
-* Assumption 1 (ex: because 3% of the refund date column contained non-sensical dates, these were excluded from the analysis)
+*   **Data Imputation**: Illogical or missing entries were handled using the KNN imputer with 2 nearest neighbors to infer and impute missing values, ensuring continuity and minimizing bias in the dataset.
+*   **Campaign Attribution**: The analysis assumes that conversions and engagement metrics are solely attributed to the campaign being assessed, without considering potential overlaps with other campaigns or external factors like seasonality.
+*   **CTR and CR Correlation**: It was assumed that higher CTR would generally lead to higher CR, although there may be cases where high click engagement does not translate to conversions due to other factors like landing page quality.
