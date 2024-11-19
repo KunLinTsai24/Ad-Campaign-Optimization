@@ -12,10 +12,6 @@ There are three campaigns in this project:
 *   **936 (Fitness Goals):** Appeal to individuals interested in fitness, health, and wellness products. This campaign promotes items like gym equipment, activewear, and nutritional supplements.
 *   **1178 (Home Renovators):** Attract DIY enthusiasts, homeowners, and individuals looking to improve their living spaces. The campaign focuses on promoting home renovation products such as tools, furniture, and decor items.
 
-This data-driven approach aims to enhance the efficiency of ad spend and drive higher ROI for future marketing campaigns.
-
-
-
 <br/>
 
 The original dataset for this analysis is available here \[[link](https://github.com/KunLinTsai24/Ad-Campaign-Optimization/blob/main/data/ad_campaign.csv)\].  
