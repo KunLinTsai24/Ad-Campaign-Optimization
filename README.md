@@ -3,7 +3,7 @@ GlobalStyle E-commerce, a global e-commerce company founded in 2010, specializes
 
 The project focused on two key objectives:
 
-*   **Identifying the Best-Performing Campaign:** Key metrics—Conversion Rate (CR), Click-Through Rate (CTR), and Cost Per Click (CPC)—were analyzed to determine the most effective audience combinations. A/B testing validated that performance differences were statistically significant and actionable.
+*   **Identifying the Best-Performing Campaign:** Key metrics—Conversion Rate (CR), Click-Through Rate (CTR), and Cost Per Click (CPC)—were analyzed to determine the most effective audience combinations. Statistical Testing validated that Campaign Effectiveness differences were statistically significant and actionable.
 *   **Refined User Segmentation**: The findings provided a deeper understanding of audience preferences, enabling the company to further segment user groups and deliver highly targeted and personalized advertising.
 
 There are three campaigns in this project:
