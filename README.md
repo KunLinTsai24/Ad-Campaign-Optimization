@@ -68,7 +68,7 @@ The analysis revealed that the **Tech Enthusiasts** campaign performed exception
 
 ![](https://github.com/KunLinTsai24/Ad-Campaign-Optimization/blob/main/img/Segmentation.png)
 
-# Recommendations:
+# Recommendations
 
 ### Campaign Optimization
 
